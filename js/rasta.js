@@ -6,8 +6,6 @@ gat = new Audio("../media/gat.mp3");
 //Fire the horn
 function playNew(sound){
 
-	//var rasta = document.getElementById("rasta");
-
 	sound.pause();
 	sound.currentTime = 0;
 	sound.play();
