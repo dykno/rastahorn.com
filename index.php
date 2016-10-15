@@ -66,7 +66,7 @@ echo '
 		</head>
 		<body>
 			<div class="container">
-				<img src="images/horn.png" alt="BWAAAAMP" onClick="playNew()" />
+				<img src="images/horn.png" alt="BWAAAAMP" onClick="playNew(horn)" />
 				<div id="audioElements"></div>
 				<div id="notification">
 					We\'ve added spacebar support to make your lives that much easier! Tap away at those spaces bars and keep the hype real!
