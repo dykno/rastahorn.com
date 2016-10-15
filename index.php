@@ -38,19 +38,13 @@ echo '
 						tag.setAttribute("id","audio")
 						zone.appendChild(tag)
 						tag.play()
+					</script>
 
 					}';
 			} else {
-				echo '<script type="text/javascript" src="js/rasta.js"</script>';
-					//function playNew() {	
-					//	var rasta = document.getElementById("rasta");
-					//	rasta.pause();
-					//	rasta.currentTime = 0;
-					//	rasta.play();
-					//}
+				echo '<script type="text/javascript" src="js/rasta.js"></script>';
 				}
 			echo '
-			</script>
 			<!-- Google Analytics -->
 			<script type="text/javascript">
 				var _gaq = _gaq || [];
