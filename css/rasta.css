@@ -1,0 +1,25 @@
+html{
+	background: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+img{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -165px;
+	margin-left: -245px;
+}
+
+#donate{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+#notification{
+	font-family: arial;
+	position: fixed;
+	bottom: 0;
+	background-color: #A6D785;
+}
