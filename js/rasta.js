@@ -3,6 +3,7 @@
 horn = new Audio("../media/rasta.mp3");
 gat = new Audio("../media/gat.mp3");
 td4w = new Audio("../media/td4w.mp3");
+dewae = new Audio("../media/dewae.mp3");
 
 //Fire the horn
 function playNew(sound){
@@ -28,6 +29,10 @@ window.onkeydown = function(event){
         //T key triggers TD4W
         if (keycode == 84){
             playNew(td4w);
-        }	
+        }
+        //D key triggers De Wae
+        if (keycode == 68){
+            playNew(dewae);
+        }
 }
 
