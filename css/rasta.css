@@ -23,3 +23,16 @@ img{
 	bottom: 0;
 	background-color: #A6D785;
 }
+
+.help-box {
+	color: #555;
+	border-radius: 10px;
+	font-family: Tahoma,Geneva,Atial,sans-serif;
+	font-size: 11px;
+	padding: 10px 10px 36px;
+	margin: 10px;
+	background: #e9ffd9;
+	border: 1px solid #a6ca8a;
+	width: 100px;
+	float: right;
+}
