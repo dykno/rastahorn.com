@@ -1,29 +1,8 @@
 html{
-	height: 100%
-	//background: url('../images/bg.jpg');
-	//background-repeat: no-repeat;
-	//background-size: cover;
-	//background: -webkit-linear-gradient(green, yellow, red);
-	//background: linear-gradient(green, yellow, red);
-}
-
-body{
-	/* Default Background for old clients */
-	//background: url('../images/bg.jpg');
-	/* For Safari 5.1 to 6.0 */
-	background: -webkit-linear-gradient(left, green, yellow, red);
-	/* For Opera 11.1 to 12.0 */
-	background: -o-linear-gradient(left, green, yellow, red);
-	/* For Firefox 3.6 to 15 */
-	background: -moz-linear-gradient(left, green, yellow, red);
-	/* Standard Syntax */
-	background: linear-gradient(to right, green, yellow, red);
-	/* Single gradient with no repeat */
-	margin: 0;
+	background: url('../images/bg.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-size: cover;
 }
-
 img{
 	position: fixed;
 	top: 50%;
@@ -32,15 +11,40 @@ img{
 	margin-left: -245px;
 }
 
+.help-box {
+	color: #555;
+	border-radius: 10px;
+	font-family: Tahoma,Geneva,Arial,sans-serif;
+	font-size: 11px;
+	padding: 10px 10px 10px;
+	margin: 10px;
+	background: #e9ffd9;
+	border: 1px solid #a6ca8a;
+	width: 150px;
+	float: right;
+}
+
+.help-content {
+	float: left;
+}
+
+.help-content li {
+	list-style: none;
+}
+
+.help-content ul {
+	padding: 0;
+}
+
+.help-header {
+	font-family: Tahoma,Geneva,Arial,sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+
 #donate{
 	position: fixed;
 	bottom: 0;
 	right: 0;
-}
-
-#notification{
-	font-family: arial;
-	position: fixed;
-	bottom: 0;
-	background-color: #A6D785;
 }
