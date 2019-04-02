@@ -11,28 +11,40 @@ img{
 	margin-left: -245px;
 }
 
+.help-box {
+	color: #555;
+	border-radius: 10px;
+	font-family: Tahoma,Geneva,Arial,sans-serif;
+	font-size: 11px;
+	padding: 10px 10px 10px;
+	margin: 10px;
+	background: #e9ffd9;
+	border: 1px solid #a6ca8a;
+	width: 150px;
+	float: right;
+}
+
+.help-content {
+	float: left;
+}
+
+.help-content li {
+	list-style: none;
+}
+
+.help-content ul {
+	padding: 0;
+}
+
+.help-header {
+	font-family: Tahoma,Geneva,Arial,sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+
 #donate{
 	position: fixed;
 	bottom: 0;
 	right: 0;
-}
-
-#notification{
-	font-family: arial;
-	position: fixed;
-	bottom: 0;
-	background-color: #A6D785;
-}
-
-.help-box {
-	color: #555;
-	border-radius: 10px;
-	font-family: Tahoma,Geneva,Atial,sans-serif;
-	font-size: 11px;
-	padding: 10px 10px 36px;
-	margin: 10px;
-	background: #e9ffd9;
-	border: 1px solid #a6ca8a;
-	width: 100px;
-	float: right;
 }
