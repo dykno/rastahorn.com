@@ -69,6 +69,7 @@ echo '
 					<div class="help-content">
 						<ul>
 							<li><b>Spacebar</b> - Horn</li>
+							<li><b>A</b> - Alert!</li>
 							<li><b>D</b> - Do u know de wae?</li>
 							<li><b>F</b> - Fail!</li>
 							<li><b>G</b> - Gunshot (Gat, gat, gat)</li>
