@@ -28,9 +28,19 @@ echo '
 			<!-- Rasta Scripts -->
 			';
 			if($browser == 'iphone'){
-				$string = "Location: https://apps.apple.com/us/app/rastahorn/id1489107571";
-				header($string);
-				die();
+				echo '<script type="text/javascript">
+					function playNew() {
+						zone = document.getElementById("audioElements");
+						tag = document.createElement("audio");
+						tag.setAttribute("preload","auto")
+						tag.setAttribute("autoplay","autoplay")
+						tag.setAttribute("src","media/rasta-blast.mp3")
+						tag.setAttribute("id","audio")
+						zone.appendChild(tag)
+						tag.play()
+					</script>
+
+					}';
 			} else {
 				echo '<script type="text/javascript" src="js/rasta.js"></script>';
 				}
@@ -49,37 +59,9 @@ echo '
 			</script>
 		</head>
 		<body>
-			<div class="container">
-				<img src="images/horn.png" alt="BWAAAAMP" onClick="playNew(horn)" />
-				<div id="audioElements"></div>
-				<div class="help-box">
-					<div class="help-header">
-						Controls
-					</div>
-					<div class="help-content">
-						<ul>
-							<li><b>Spacebar</b> - Horn</li>
-							<li><b>A</b> - Alert!</li>
-							<li><b>D</b> - Do u know de wae?</li>
-							<li><b>F</b> - Fail!</li>
-							<li><b>G</b> - Gunshot (Gat, gat, gat)</li>
-							<li><b>H</b> - Please don\'t</li>
-							<li><b>N</b> - U do not know de wae</li>
-							<li><b>T</b> - Turn down for what!?</li>
-							<li><b>Y</b> - Yaaassss</li>
-						</ul>
-					</div>
-				</div>
-				<div id="donate">
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="ZE6YMG26QNZZY">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate! Keep the hype real!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
+			<h1>Privacy Policy</h1>
+				<p>Turn if off and back on again.</p>
 
-				</div>	
-			</div>
 		</body>
 	</html>
 ';
