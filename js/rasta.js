@@ -8,7 +8,8 @@ notdewae = new Audio("../media/notdewae.mp3");
 heynow = new Audio("../media/heynow.mp3");
 yas = new Audio("../media/yas.mp3");
 pir = new Audio("../media/pir.mp3");
-alert = new Audio("../media/alert.mp3");
+mgsalert = new Audio("../media/alert.mp3");
+baskin = new Audio("../media/baskin.mp3");
 
 //Fire the horn
 function playNew(sound){
@@ -36,8 +37,12 @@ window.onkeydown = function(event){
     	}
         //A key triggers Alert
         if (keycode == 65){
-            playNew(alert);
+            playNew(mgsalert);
         }
+	//B key triggers Baskin
+	if (keycode == 66){
+	   playNew(baskin);
+	}
     	//G key triggers Gat
     	if (keycode == 71){
     		playNew(gat);
