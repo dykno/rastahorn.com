@@ -28,9 +28,19 @@ echo '
 			<!-- Rasta Scripts -->
 			';
 			if($browser == 'iphone'){
-				$string = "Location: https://apps.apple.com/us/app/rastahorn/id1489107571";
-				header($string);
-				die();
+				echo '<script type="text/javascript">
+					function playNew() {
+						zone = document.getElementById("audioElements");
+						tag = document.createElement("audio");
+						tag.setAttribute("preload","auto")
+						tag.setAttribute("autoplay","autoplay")
+						tag.setAttribute("src","media/rasta-blast.mp3")
+						tag.setAttribute("id","audio")
+						zone.appendChild(tag)
+						tag.play()
+					</script>
+
+					}';
 			} else {
 				echo '<script type="text/javascript" src="js/rasta.js"></script>';
 				}
