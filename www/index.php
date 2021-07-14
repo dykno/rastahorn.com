@@ -1,7 +1,7 @@
 <?php
 	$browser = 'non-mobile';
 	if(strpos($_SERVER['HTTP_USER_AGENT'],"iPhone") || strpos($_SERVER['HTTP_USER_AGENT'],"iPad")){
-		$browser = 'iphone';
+		header("Location: https://apps.apple.com/us/app/rastahorn/id1489107571");
 	}
 echo '
 	<!DOCTYPE HTML>
@@ -26,15 +26,7 @@ echo '
 			<!-- Rasta Styles -->
 			<link href="css/rasta.css" rel="stylesheet" type="text/css">
 			<!-- Rasta Scripts -->
-			';
-			if($browser == 'iphone'){
-				$string = "Location: https://apps.apple.com/us/app/rastahorn/id1489107571";
-				header($string);
-				die();
-			} else {
-				echo '<script type="text/javascript" src="js/rasta.js"></script>';
-				}
-			echo '
+			<script type="text/javascript" src="js/rasta.js"></script>
 			<!-- Google Analytics -->
 			<script type="text/javascript">
 				var _gaq = _gaq || [];
