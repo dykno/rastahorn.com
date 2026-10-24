@@ -1,10 +1,4 @@
-<?php
-	$browser = 'non-mobile';
-	if(strpos($_SERVER['HTTP_USER_AGENT'],"iPhone") || strpos($_SERVER['HTTP_USER_AGENT'],"iPad")){
-		$browser = 'iphone';
-	}
-echo '
-	<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 	<html lang="en-us">
 		<head>
 	<!--
@@ -26,25 +20,7 @@ echo '
 			<!-- Rasta Styles -->
 			<link href="css/board.css" rel="stylesheet" type="text/css">
 			<!-- Rasta Scripts -->
-			';
-			if($browser == 'iphone'){
-				echo '<script type="text/javascript">
-					function playNew() {
-						zone = document.getElementById("audioElements");
-						tag = document.createElement("audio");
-						tag.setAttribute("preload","auto")
-						tag.setAttribute("autoplay","autoplay")
-						tag.setAttribute("src","media/rasta-blast.mp3")
-						tag.setAttribute("id","audio")
-						zone.appendChild(tag)
-						tag.play()
-
-					}';
-			} else {
-				echo '<script type="text/javascript" src="js/board.js"</script>';
-				}
-			echo '
-			</script>
+			<script type="text/javascript" src="js/board.js"></script>
 			<!-- Google Analytics -->
 			<script type="text/javascript">
 				var _gaq = _gaq || [];
@@ -83,5 +59,4 @@ echo '
 			</div>
 		</body>
 	</html>
-';
-?>	
+	
